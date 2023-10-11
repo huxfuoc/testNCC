@@ -1,0 +1,83 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.Sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #181617;
+}
+
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.SidebarList .row {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0%;
+  width: 100%;
+  height: 50PX;
+  border: 1px solid black;
+  color: white;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #5C5C5C;
+}
+
+.Menu {
+  grid-area: menu;
+}
+
+.Main {
+  grid-area: main;
+}
+
+.Footer {
+  grid-area: footer;
+  padding: 0px 0px;
+  border-top: 2px solid #E2E2E2
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content {
+  background-color: #EFEFEF;
+  padding: 30px 200px;
+}
+
+.grid-columns-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 30px 50px;
+}
+
+h3 {
+  text-align: left;
+}
+
+p {
+  text-align: left;
+  padding: 0px 50px;
+  font-size: 14px;
+}
